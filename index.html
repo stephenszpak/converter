@@ -8,11 +8,13 @@
 		<form>
 			<div>Type temperature here: <input id="inputBox" type="number"></div>
 			<ul style="list-style: none;">
-				<li>Fahrenheit<input type="radio" id="f" name="fahrenheit"></li>
-				<li>Celsius<input type="radio" id="c" name="celsius"></li>
+				<li>to Fahrenheit<input type="radio" id="f" name="temp" value="fahrenheit"></li>
+				<li>to Celsius<input type="radio" id="c" name="temp" value="celsius"></li>
 			</ul>
 			<button type="button" id="converter">Convert</button>
-			<div id="converted" class="colors"></div>
+			<input type="button" name="reset_form" value="Reset Form" onclick="this.form.reset();">
+
+			<div id="converted"></div>
 		</form>
 		<script type="text/javascript" src="converter.js"></script>
 	</body>
